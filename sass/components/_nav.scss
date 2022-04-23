@@ -3,8 +3,10 @@
     align-items: center;
 }
 .nav__list {
-    display: flex;
-    padding-left: 0;
+    display: none;
+    // display: flex;
+    // padding-left: 0;
+    
 }
 .nav__item {
     margin-right: 50px;
