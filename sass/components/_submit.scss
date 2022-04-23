@@ -1,0 +1,31 @@
+.submit {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 200px;
+    height: 50px;
+    padding: 10px 55px 10px 56px;
+    color: var(--primary-dark-txt);
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border: none;
+    cursor: pointer;
+
+    background: #2196F3;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+     background: #188CE8;
+    
+    }
+}

@@ -1,0 +1,39 @@
+.address {
+    font-style: normal;
+}
+
+.address__list {
+    padding: 0;
+}
+
+.address__item {
+    margin-bottom: 9px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+
+.address__email,
+.address__email:hover,
+.address__email:focus,
+.address__phone,
+.address__phone:hover,
+.address__phone:focus {
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.address__link {
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-dark-txt);
+    font-style: normal;
+}

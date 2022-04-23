@@ -1,0 +1,92 @@
+.footer {
+    background-color: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer__container {
+    display: flex;
+    align-items: baseline;
+}
+.footer-logo {
+    display: block;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+
+    color: var(--primary-dark-txt);
+}
+.footer__socials {
+    margin-left: 70px;
+}
+.footer-title {
+    color: var(--primary-dark-txt);
+    margin-bottom: 20px;
+}
+.footer__form {
+    margin-left: auto;
+
+}
+
+.footer__label {
+    display: flex;
+}
+
+.footer__email {
+    margin-right: 12px;
+}
+
+.footer__imput {
+    display: inline-block;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2f303a;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: var(--primary-dark-txt);
+
+    padding-top: 15px;
+    padding-left: 16px;
+    padding-bottom: 15px;
+
+    &:focus {
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+}
+
+input .footer-imput::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+
+}
+.footer-submit {
+    max-width: 350px;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+
+    background: var(--accent-txt-cl);
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: var(--primary-dark-txt)
+}
+.footer-submit-icon {
+    fill: var(--primary-dark-txt);
+}
+.submit-text {
+    margin-right: 10px;
+}
