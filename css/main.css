@@ -176,6 +176,13 @@ body {
   z-index: 10;
 }
 
+.mobile-btn:hover .icon-open,
+.mobile-btn:focus .icon-open,
+.mobile-btn:focus .icon-close,
+.mobile-btn:hover .icon-close {
+  fill: #2196F3;
+}
+
 .icon-open {
   opacity: 1;
 }
