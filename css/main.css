@@ -532,6 +532,12 @@ body {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .section--non {
+    display: none;
+  }
+}
+
 .occupation {
   display: flex;
   padding: 0px;

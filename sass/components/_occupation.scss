@@ -1,6 +1,12 @@
+.section--non{
+    @media screen and (max-width:1199px) {
+        display: none;
+    }
+}
 .occupation {
     display: flex;
     padding: 0px;
+    
 }
 .occupation__thumb {
     position: relative;
