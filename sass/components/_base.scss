@@ -34,7 +34,11 @@ body {
     color: var(--primary-txt-cl);
 }
 .section {
-    padding: 94px 0;
+    padding: 60px 0;
+
+    @media screen and (min-width:1200px) {
+        padding: 94px 0;
+    }
 }
 .section__title {
     font-family: var(--main-font);
