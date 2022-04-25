@@ -44,6 +44,10 @@ body {
   color: var(--primary-txt-cl);
 }
 
+.no-scroll {
+  overflow-y: hidden;
+}
+
 .container {
   width: 100%;
   padding-left: 15px;
@@ -134,33 +138,71 @@ body {
   padding-bottom: 10px;
 }
 
-.сontacts {
-  display: none;
+@media screen and (min-width: 768px) {
+  .header__container {
+    display: flex;
+    align-items: center;
+  }
 }
 
-.сontacts__item {
-  margin-right: 50px;
+.сontacts {
+  display: none;
+  padding-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .сontacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .сontacts {
+    flex-direction: row;
+    gap: 30px;
+  }
 }
 
 .сontacts__link {
   color: var(--secondary-txt-cl);
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-family: var(--main-font);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--primary-txt-cl);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 1200px) {
+  .сontacts__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .сontacts__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
 .сontacts__icon {
-  margin-right: 10px;
+  margin-right: 8px;
   fill: var(--secondary-txt-cl);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .сontacts__icon {
+    margin-right: 10px;
+  }
 }
 
 .сontacts__link:hover, .сontacts__link:focus {
@@ -170,6 +212,20 @@ body {
 .сontacts__link:hover .сontacts__icon,
 .сontacts__link:focus .сontacts__icon {
   fill: var(--accent-txt-cl);
+}
+
+@media screen and (min-width: 1200px) {
+  .phone {
+    width: 10px;
+    height: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mail {
+    width: 16px;
+    height: 12px;
+  }
 }
 
 .сontacts__item:last-child {
@@ -195,6 +251,12 @@ body {
 .mobile-btn:focus .icon-close,
 .mobile-btn:hover .icon-close {
   fill: #2196F3;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-btn {
+    display: none;
+  }
 }
 
 .icon-open {
@@ -328,6 +390,13 @@ body {
 
 .nav__list {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__list {
+    display: flex;
+    padding-left: 0;
+  }
 }
 
 .nav__item {

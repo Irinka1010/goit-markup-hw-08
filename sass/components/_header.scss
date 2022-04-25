@@ -4,50 +4,74 @@
     padding-top: 10px;
     padding-bottom: 10px;
 
-    // &__container {
-    //     display: flex;
-    // }
+    &__container {
+
+        @media screen and (min-width:768px) {
+        display: flex;
+        align-items: center;
+        }             
+        
+    }
         
 
 }
 
 .сontacts {
     display: none;
+    padding-left: 0;
 
-
-    // display: flex;
-    // padding-left: 0;
-    // margin-left: auto;
-
-    &__item {
-        margin-right: 50px;
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: auto;
         
-
     }
+    @media screen and (min-width:1200px) {
+        
+        flex-direction: row;
+        gap: 30px;
+        
+    
+    }
+ 
+
 
     &__link {
         color: var(--secondary-txt-cl);
         display: flex;
         align-items: center;
-        padding-top: 32px;
-        padding-bottom: 32px;
+
+        @media screen and (min-width:1200px) {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+        
         
 
 
         font-family: var(--main-font);
         font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
+        font-size: 12px;
+        line-height: 1.16;
         letter-spacing: 0.02em;
         color: var(--primary-txt-cl);
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        @media screen and (min-width:1200px) {
+            font-size: 14px;
+            line-height: 1.14;
+        }
         
     }
 
     &__icon {
-        margin-right: 10px;
+        margin-right: 8px;
         fill: var(--secondary-txt-cl);
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        @media screen and (min-width:1200px) {
+            margin-right: 10px;
+        }
     }
 
     &__link:hover,
@@ -60,6 +84,19 @@
         fill: var(--accent-txt-cl);
     }
 
+}
+.phone{
+    @media screen and (min-width:1200px) {
+        width: 10px;
+        height: 16px;
+    }
+
+}
+.mail{
+    @media screen and (min-width:1200px) {
+        width: 16px;
+        height: 12px;
+    }
 }
 
 .сontacts__item:last-child {
@@ -83,6 +120,10 @@
     &:focus .icon-close,
     &:hover .icon-close {
         fill: #2196F3;
+    }
+
+    @media screen and (min-width:768px) {
+        display: none;
     }
 
 }
