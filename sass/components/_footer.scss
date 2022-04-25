@@ -42,7 +42,16 @@
 }
 
 .footer__label {
+    display: flex;
     justify-content: center;
+    display: block;
+    
+    @media screen and (min-width:780px) {
+        align-items: center;
+        flex-direction: column;
+    }
+
+
     @media screen and (min-width:1200px) {
         display: flex;
     }
@@ -54,7 +63,7 @@
 
 .footer__imput {
     display: inline-block;
-    width: 358px;
+    width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
@@ -71,6 +80,15 @@
     padding-left: 16px;
     padding-bottom: 15px;
     margin-bottom: 20px;
+    @media screen and (min-width:768px) {
+        width: 450px;       
+                
+    }
+    @media screen and (min-width:1200px) {
+        width: 358px;
+    }
+      
+        
 
     &:focus {
         border: 1px solid rgba(255, 255, 255, 0.3);

@@ -887,7 +887,16 @@ body {
 }
 
 .footer__label {
+  display: flex;
   justify-content: center;
+  display: block;
+}
+
+@media screen and (min-width: 780px) {
+  .footer__label {
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -902,7 +911,7 @@ body {
 
 .footer__imput {
   display: inline-block;
-  width: 358px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -920,6 +929,18 @@ body {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__imput {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__imput {
+    width: 358px;
+  }
+}
+
 .footer__imput:focus {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
@@ -931,9 +952,8 @@ input .footer-imput::placeholder {
 .footer-submit {
   max-width: 350px;
   min-width: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border: none;
   background: var(--accent-txt-cl);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -944,6 +964,14 @@ input .footer-imput::placeholder {
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--primary-dark-txt);
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .footer-submit-icon {
