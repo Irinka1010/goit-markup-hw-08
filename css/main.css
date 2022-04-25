@@ -978,6 +978,18 @@ input .footer-imput::placeholder {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+@media screen and (min-width: 768px) {
+  .work__img {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .work__img {
+    width: 370px;
+  }
+}
+
 .work__caption {
   margin-bottom: 4px;
   font-family: var(--main-font);
@@ -996,7 +1008,7 @@ input .footer-imput::placeholder {
   color: var(--secondary-txt-cl);
 }
 
-@media screen and (max-width: 767.99px) {
+@media screen and (max-width: 767px) {
   .work__item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1052,8 +1064,26 @@ input .footer-imput::placeholder {
   line-height: 1.55;
   text-align: left;
   color: var(--primary-dark-txt);
-  padding: 63px 24px;
+  padding: 77px 24px;
   letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 370px) {
+  .overlay-text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .overlay-text {
+    padding: 49px 24px 77px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .overlay-text {
+    padding: 63px 24px;
+  }
 }
 
 .backdrop {
