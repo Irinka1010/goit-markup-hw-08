@@ -846,8 +846,14 @@ body {
 }
 
 .footer__container {
-  display: flex;
-  align-items: baseline;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .footer-logo {
@@ -860,7 +866,13 @@ body {
 }
 
 .footer__socials {
-  margin-left: 70px;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__socials {
+    margin-left: 70px;
+  }
 }
 
 .footer-title {
@@ -868,12 +880,20 @@ body {
   margin-bottom: 20px;
 }
 
-.footer__form {
-  margin-left: auto;
+@media screen and (min-width: 1200px) {
+  .footer__form {
+    margin-left: auto;
+  }
 }
 
 .footer__label {
-  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__label {
+    display: flex;
+  }
 }
 
 .footer__email {
@@ -897,6 +917,7 @@ body {
   padding-top: 15px;
   padding-left: 16px;
   padding-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .footer__imput:focus {
@@ -935,6 +956,7 @@ input .footer-imput::placeholder {
 
 .address {
   font-style: normal;
+  margin-bottom: 60px;
 }
 
 .address__list {
@@ -942,7 +964,13 @@ input .footer-imput::placeholder {
 }
 
 .address__item {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .address__item {
+    margin-bottom: 9px;
+  }
 }
 
 .address__item:last-child {
