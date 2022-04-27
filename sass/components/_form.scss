@@ -95,12 +95,16 @@ textarea .comment::placeholder {
 
     font-family: var(--main-font);
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.6;
     letter-spacing: 0.03em;
     margin-bottom: 30px;
 
     color: #757575;
+    @media screen and (min-width:1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 .agreement__label [href] {
     color: var(--accent-txt-cl);

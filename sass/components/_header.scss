@@ -114,7 +114,8 @@
     background-color: transparent ;
     border: none;
     cursor: pointer;
-    z-index: 10;
+    margin-right: 10px;
+    z-index: 6;
     &:hover .icon-open,
     &:focus .icon-open,
     &:focus .icon-close,
@@ -146,6 +147,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 5;
 
     width: 100vw;
     height: 100vh;
