@@ -21,12 +21,8 @@
         flex-basis: calc((100% - 6 * 30px) / 6);
     
     }
-
-    
+   
 }
-
-
-
 .clients__link {
     display: flex;
     justify-content: center;
@@ -41,9 +37,7 @@
     &:focus {
      border-color: var(--accent-txt-cl);
     }
-
-
-   
+  
 }
 
 .clients__icon {

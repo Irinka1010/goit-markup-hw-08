@@ -179,15 +179,10 @@ body {
 
 @media screen and (min-width: 1200px) {
   .сontacts__link {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .сontacts__link {
     font-size: 14px;
     line-height: 1.14;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -1261,12 +1256,6 @@ input .footer-imput::placeholder {
   letter-spacing: 0.03em;
 }
 
-.work__link:hover .overlay-text,
-.work__link:focus .overlay-text {
-  transform: translateY(0);
-  background: rgba(33, 150, 243, 0.9);
-}
-
 @media screen and (max-width: 370px) {
   .overlay-text {
     font-size: 14px;
@@ -1283,6 +1272,12 @@ input .footer-imput::placeholder {
   .overlay-text {
     padding: 63px 24px;
   }
+}
+
+.work__link:hover .overlay-text,
+.work__link:focus .overlay-text {
+  transform: translateY(0);
+  background: rgba(33, 150, 243, 0.9);
 }
 
 .backdrop {
