@@ -1,8 +1,7 @@
 .header {
     background-color: #ffffff;
     border-bottom: 1px solid #ececec;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    
 
     &__container {
 
@@ -170,6 +169,9 @@
 .mobile-nav{
     padding: 0;
 }
+.mobile-nav__link--active{
+    color:#2196F3;
+}
 .mobile-nav__item:not(:last-child){
     margin-bottom: 32px;
 
@@ -182,6 +184,9 @@
     letter-spacing: 0.02em;
     
     color: #212121;
+    &--active {
+        color: #2196F3;
+    }
 }
 .mobile-group{
     margin-top: auto;

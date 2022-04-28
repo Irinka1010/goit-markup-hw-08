@@ -134,8 +134,6 @@ body {
 .header {
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -301,6 +299,10 @@ body {
   padding: 0;
 }
 
+.mobile-nav__link--active {
+  color: #2196F3;
+}
+
 .mobile-nav__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -312,6 +314,10 @@ body {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #212121;
+}
+
+.mobile-nav__link--active {
+  color: #2196F3;
 }
 
 .mobile-group {
@@ -487,10 +493,9 @@ body {
 
 .hero {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   max-width: 1600px;
-  min-height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_sm.png);
@@ -520,6 +525,8 @@ body {
 @media (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero_lg.png);
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -771,10 +778,10 @@ body {
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--secondary-txt-cl);
+  margin-bottom: 16px;
 }
 
 .socials {
-  margin-top: 16px;
   display: flex;
   padding-left: 0;
   justify-content: center;
@@ -925,6 +932,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer__socials {
     margin-left: 70px;
+    margin-bottom: 0;
   }
 }
 
@@ -1045,6 +1053,12 @@ input .footer-imput::placeholder {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .address {
+    margin-bottom: 0;
+  }
+}
+
 .address__list {
   padding: 0;
 }
@@ -1151,9 +1165,30 @@ input .footer-imput::placeholder {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .work__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .work__item {
+    margin: 15px;
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .work__item {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+  }
+}
+
 .work__link {
   text-decoration: none;
-  display: block;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1175,6 +1210,7 @@ input .footer-imput::placeholder {
 
 .work__caption {
   margin-bottom: 4px;
+  flex-grow: 1;
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 18px;
@@ -1191,27 +1227,9 @@ input .footer-imput::placeholder {
   color: var(--secondary-txt-cl);
 }
 
-@media screen and (max-width: 767px) {
-  .work__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .work__item {
-    margin: 15px;
-    flex-basis: calc((100% - 2 * 30px) / 2);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .work__item {
-    flex-basis: calc((100% - 3 * 30px) / 3);
-  }
-}
-
 .work__container {
   padding: 20px 24px;
+  flex-grow: 1;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
@@ -1222,33 +1240,31 @@ input .footer-imput::placeholder {
   overflow: hidden;
 }
 
-.work__overlay {
+.overlay-text {
   position: absolute;
-  left: 0;
   bottom: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background: #ffffff;
-  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 77px 24px;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.work__link:hover .work__overlay,
-.work__link:focus .work__overlay {
-  transform: translateY(0);
-  background: rgba(33, 150, 243, 0.9);
-}
-
-.overlay-text {
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
   text-align: left;
   color: var(--primary-dark-txt);
-  padding: 77px 24px;
   letter-spacing: 0.03em;
+}
+
+.work__link:hover .overlay-text,
+.work__link:focus .overlay-text {
+  transform: translateY(0);
+  background: rgba(33, 150, 243, 0.9);
 }
 
 @media screen and (max-width: 370px) {
@@ -1259,7 +1275,7 @@ input .footer-imput::placeholder {
 
 @media screen and (min-width: 768px) {
   .overlay-text {
-    padding: 49px 24px 77px;
+    padding: 49px 24px 77px 24px;
   }
 }
 
