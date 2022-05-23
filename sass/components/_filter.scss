@@ -15,12 +15,27 @@
     }
 }
 .filter__item {
-    margin-right: 8px;
-    margin-bottom: 15px;
-
-    &:last-child {
-        margin-right: 0;
+    @media screen and (max-width:767px) {
+            &:not(:last-child) {
+                    margin-right: 8px;
+                    margin-bottom: 15px;
+                }
+            
+                &:nth-child(3) {
+                    margin-right: 0;
+                }
+            
+                &:nth-last-child(-n + 2) {
+                    margin-bottom: 0;
+                }
+            }
+        
+    @media screen and (min-width:768px){
+        &:not(:last-child) {
+                margin-right: 8px;
+            }
     }
+    
 }
 .button {
     padding: 6px 22px;
